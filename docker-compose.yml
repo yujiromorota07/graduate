@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ubuntu20.04:
+    restart: always
+    build: .
+    container_name: ubuntu20.04
+    working_dir: '/root/dev/'
+    tty: true
+    volumes: 
+    - ./dev:/root/dev/
